@@ -45,8 +45,15 @@ If the satellite observation times are close to each other, then:
 6. Fit bilinear (a plane in vapor space) to the satellite tcwv, era5 tcwv and era5 tcwv subsampled at the locations where there is valid data.  This allows estimation of the tcwv value at the GNSS location.  Comparison of the era5 and era5_sampled case may allow estimation of the error introduced by the fit.  If the vapor is highly variable inside the 7x7 submap, the two ERA5 values may differ substantially, especially if the satellite data is relatively sparse.
 7. Save the fit parameters and the fitted value at the GNSS location for all 3 fits.
 
-Save all the data in yearly netcdf files.
+Save all the data in yearly netcdf files, e.g. 
 collocations_2013_ocean.nc
+
+This is done in
+```
+make_collocation_files.py
+```
+
+
 
 
 ## Questions going forward
