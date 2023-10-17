@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.deprecated
+.venv/
+old_code/
+.netrc
+.old
